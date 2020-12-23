@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/tickets.css">
+  <link rel="stylesheet" href="./css/aviatickets.css">
+</head>
+<body>
+  <div class="horizonSidenav">
+    <nav>
+      <ul>
+        <li><a href="./news.html">NEWS</a></li>
+        <li><a href="./index.html">SHOPPING</a></li>
+        <li><a href="./services.html">SERVICES</a></li>
+        <li><a href="./avia-tickets.html">TICEKETS</a></li>
+      </ul>
+    </nav>
+    <button onclick="hideTopnav()" class="vert-sidenav-hide">X</button>
+  </div>
+  <div class="root">
+    <div class="vertical-header-altern">
+      <div class="logo"><a href="./index.html"><h4>LOGO</h4></a></div>
+    </div>
+    <div class="content">
+      <div class="header-horizon">
+        <nav>
+          <ul>
+            <li><a href="./news.html">NEWS</a></li>
+            <li><a href="./index.html">SHOPPING</a></li>
+            <li id="services"><a href="#">SERVICES</a></li>
+            <li><a href="./avia-tickets.html">TICEKETS</a></li>
+          </ul>
+        </nav>
+        <div class="resp-header">
+          <a href="./index.html"><h4>LOGO</h4></a>
+          <div class="resp-burger">
+            <img onclick="showTopnav()" src="./static/header-vertical/menu-of-three-lines.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="breadcumb"> <img style="left: 145px;" src="./static/icon/up-arrow.svg" alt=""> </div>
+      <div class="book">
+          <div class="book-inner">
+            <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Roundtrip</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">One-Way</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Multi-city</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <form action="">
+    <div class="fields">
+        <div class="fields-line">
+            <div class="input">
+                <button>from</button>
+                <input type="text" placeholder="City, Airport or Island">
+            </div>
+            <div class="input">
+                <button>top</button>
+                <input type="text" placeholder="City, Airport or Island">
+            </div>
+        </div>
+        <div class="fields-line">
+            <div class="input">
+                <button>depart</button>
+                <input type="date">
+            </div>
+            <div class="input">
+                <button>return</button>
+                <input type="date">
+            </div>
+        </div>
+    </div>
+    <div class="book-option">
+      <div class="option-one">
+        <label for="">Adults</label>
+        <select name="" id="">
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+        </select>
+      </div>
+      <div class="option-two">
+        <label for="">Children (2-11 Years Of Age At Time Or Tarvel)</label>
+        <select name="" id="">
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+        </select>
+      </div>
+    </div>
+    <div class="r-f-o">
+      <input type="checkbox">
+      <span>Refundables fares only</span>
+    </div>
+    <div class="search-btns">
+      <button type="submit" class="search-flights">Search flights</button>
+      <button type="submit" class="search-flights-hotels">Search flights and hotels</button>
+    </div>
+</form>
+</div>
+
+<div id="Paris" class="tabcontent">
+<form action="">
+    <div class="fields">
+        <div class="fields-line">
+            <div class="input">
+                <button>from</button>
+                <input type="text" placeholder="City, Airport or Island">
+            </div>
+            <div class="input">
+                <button>top</button>
+                <input type="text" placeholder="City, Airport or Island">
+            </div>
+        </div>
+        <div class="fields-line">
+            <div class="input">
+                <button>depart</button>
+                <input type="date">
+            </div>
+            <div class="input">
+
+            </div>
+        </div>
+    </div>
+    <div class="book-option">
+      <div class="option-one">
+        <label for="">Adults</label>
+        <select name="" id="">
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+        </select>
+      </div>
+      <div class="option-two">
+        <label for="">Children (2-11 Years Of Age At Time Or Tarvel)</label>
+        <select name="" id="">
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+        </select>
+      </div>
+    </div>
+    <div class="r-f-o">
+      <input type="checkbox">
+      <span>Refundables fares only</span>
+    </div>
+    <div class="search-btns">
+      <button type="submit" class="search-flights">Search flights</button>
+      <button type="submit" class="search-flights-hotels">Search flights and hotels</button>
+    </div>
+</form>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <form action="">
+  <div class="m-f">
+        <div class="fields">
+        <div class="fields-line">
+            <div class="input">
+                <button>from</button>
+                <input type="text" placeholder="City, Airport or Island">
+            </div>
+            <div class="input">
+                <button>top</button>
+                <input type="text" placeholder="City, Airport or Island">
+            </div>
+        </div>
+        <div class="fields-line">
+            <div class="input">
+                <button>depart</button>
+                <input type="date">
+            </div>
+            <div class="input">
+                <button>return</button>
+                <input type="date" >
+            </div>
+        </div>
+    </div>
+      </div>
+        <div style="margin-top: 20px" class="f-c"></div>
+    <div class="book-option">
+      <div class="option-one">
+        <label for="">Adults</label>
+        <select name="" id="">
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+        </select>
+      </div>
+      <div class="option-two">
+        <label for="">Children (2-11 Years Of Age At Time Or Tarvel)</label>
+        <select name="" id="">
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+          <option value="">option</option>
+        </select>
+      </div>
+    </div>
+    <div class="r-f-o">
+      <input type="checkbox">
+      <span>Refundables fares only</span>
+    </div>
+  <div class="another-fly" onclick="clone()">
+    <span>Add another flight</span>
+  </div>
+    <div class="search-btns">
+      <button type="submit" class="search-flights">Search flights</button>
+      <button type="submit" class="search-flights-hotels">Search flights and hotels</button>
+    </div>
+</form>
+</div>
+          </div>
+      </div>
+      <section class="popular-flights" style="margin-top: 40px;">
+        <h3>Popular Flights</h3>
+        <div class="popular-flights-inner">
+          <div class="popular-flights-inner-left">
+            <a href="./tickets-search.html">
+              <div class="popular-flight">
+              <fieldset>
+                <legend>
+                  <span id="from">London</span>
+                    <small> -> </small>
+                  <span id="to">Paris</span>
+                </legend>
+                <img src="https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTYyNDg1MjE3MTI1Mjc5Mzk4%2Ftopic-london-gettyimages-760251843-promo.jpg" alt="">
+              </fieldset>
+              </div>
+            </a>
+            <a href="./tickets-search.html">
+              <div class="popular-flight">
+              <fieldset>
+                <legend>
+                  <span id="from">London</span>
+                    <small> -> </small>
+                  <span id="to">Paris</span>
+                </legend>
+                <img src="https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTYyNDg1MjE3MTI1Mjc5Mzk4%2Ftopic-london-gettyimages-760251843-promo.jpg" alt="">
+              </fieldset>
+              </div>
+            </a>
+            <a href="./tickets-search.html">
+              <div class="popular-flight">
+              <fieldset>
+                <legend>
+                  <span id="from">London</span>
+                    <small> -> </small>
+                  <span id="to">Paris</span>
+                </legend>
+                <img src="https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTYyNDg1MjE3MTI1Mjc5Mzk4%2Ftopic-london-gettyimages-760251843-promo.jpg" alt="">
+              </fieldset>
+              </div>
+            </a>
+            <a href="./tickets-search.html">
+              <div class="popular-flight">
+              <fieldset>
+                <legend>
+                  <span id="from">London</span>
+                    <small> -> </small>
+                  <span id="to">Paris</span>
+                </legend>
+                <img src="https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTYyNDg1MjE3MTI1Mjc5Mzk4%2Ftopic-london-gettyimages-760251843-promo.jpg" alt="">
+              </fieldset>
+              </div>
+            </a>
+            <a href="./tickets-search.html">
+              <div class="popular-flight">
+              <fieldset>
+                <legend>
+                  <span id="from">London</span>
+                    <small> -> </small>
+                  <span id="to">Paris</span>
+                </legend>
+                <img src="https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTYyNDg1MjE3MTI1Mjc5Mzk4%2Ftopic-london-gettyimages-760251843-promo.jpg" alt="">
+              </fieldset>
+              </div>
+            </a>
+            <a href="./tickets-search.html">
+              <div class="popular-flight">
+              <fieldset>
+                <legend>
+                  <span id="from">London</span>
+                    <small> -> </small>
+                  <span id="to">Paris</span>
+                </legend>
+                <img src="https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTYyNDg1MjE3MTI1Mjc5Mzk4%2Ftopic-london-gettyimages-760251843-promo.jpg" alt="">
+              </fieldset>
+              </div>
+            </a>
+          </div>
+          <div class="popular-flights-inner-right">
+            <h3>Related Flights</h3>
+            <table>
+              <tbody>
+                <tr>
+                  <td><a href="./tickets-search.html">
+                    <span>Manchester</span>
+                    <small> -> </small>
+                    <span>Mumbai</span>
+                  </a></td>
+                  <td class="price">
+                    <span>From</span>
+                    <span>100 ₾</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="./tickets-search.html">
+                    <span>Manchester</span>
+                    <small> -> </small>
+                    <span>Mumbai</span>
+                  </a></td>
+                  <td class="price">
+                    <span>From</span>
+                    <span>100 ₾</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="./tickets-search.html">
+                    <span>Manchester</span>
+                    <small> -> </small>
+                    <span>Mumbai</span>
+                  </a></td>
+                  <td class="price">
+                    <span>From</span>
+                    <span>100 ₾</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="./tickets-search.html">
+                    <span>Manchester</span>
+                    <small> -> </small>
+                    <span>Mumbai</span>
+                  </a></td>
+                  <td class="price">
+                    <span>From</span>
+                    <span>100 ₾</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="./tickets-search.html">
+                    <span>Manchester</span>
+                    <small> -> </small>
+                    <span>Mumbai</span>
+                  </a></td>
+                  <td class="price">
+                    <span>From</span>
+                    <span>100 ₾</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="./tickets-search.html">
+                    <span>Manchester</span>
+                    <small> -> </small>
+                    <span>Mumbai</span>
+                  </a></td>
+                  <td class="price">
+                    <span>From</span>
+                    <span>100 ₾</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="./tickets-search.html">
+                    <span>Manchester</span>
+                    <small> -> </small>
+                    <span>Mumbai</span>
+                  </a></td>
+                  <td class="price">
+                    <span>From</span>
+                    <span>100 ₾</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="./tickets-search.html">
+                    <span>Manchester</span>
+                    <small> -> </small>
+                    <span>Mumbai</span>
+                  </a></td>
+                  <td class="price">
+                    <span>From</span>
+                    <span>100 ₾</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="./tickets-search.html">
+                    <span>Manchester</span>
+                    <small> -> </small>
+                    <span>Mumbai</span>
+                  </a></td>
+                  <td class="price">
+                    <span>From</span>
+                    <span>100 ₾</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a href="./tickets-search.html">
+                    <span>Manchester</span>
+                    <small> -> </small>
+                    <span>Mumbai</span>
+                  </a></td>
+                  <td class="price">
+                    <span>From</span>
+                    <span>100 ₾</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="text-info">
+        <div class="text-info-inner">
+          <h3>Ut tempus lacinia sem, quis.</h3>
+          <p>
+            Sed et porta felis, quis interdum velit. Nullam volutpat sem eu risus malesuada, id tempus lorem maximus. Donec aliquet, erat vitae faucibus sodales, ex nisl porta dolor, vitae ultricies est ligula eget sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus vitae euismod lacus. Praesent accumsan faucibus egestas. Pellentesque id velit ac ex imperdiet molestie at at justo. Cras congue a mi a laoreet. Proin molestie sed risus id euismod. Vestibulum sit amet mattis diam. Nam scelerisque consequat orci et porttitor. Mauris posuere urna a tellus mattis, at consectetur lectus aliquet. Quisque auctor dolor vitae.
+          </p>
+          <img class="hero" src="https://imageproxy.themaven.net//https%3A%2F%2Fwww.history.com%2F.image%2FMTYyNDg1MjE3MTI1Mjc5Mzk4%2Ftopic-london-gettyimages-760251843-promo.jpg" alt="">
+          <p>
+            Sed et porta felis, quis interdum velit. Nullam volutpat sem eu risus malesuada, id tempus lorem maximus. Donec aliquet, erat vitae faucibus sodales, ex nisl porta dolor, vitae ultricies est ligula eget sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus vitae euismod lacus. Praesent accumsan faucibus egestas. Pellentesque id velit ac ex imperdiet molestie at at justo. Cras congue a mi a laoreet. Proin molestie sed risus id euismod. Vestibulum sit amet mattis diam. Nam scelerisque consequat orci et porttitor. Mauris posuere urna a tellus mattis, at consectetur lectus aliquet. Quisque auctor dolor vitae.
+          </p>
+          <p>
+            Sed et porta felis, quis interdum velit. Nullam volutpat sem eu risus malesuada, id tempus lorem maximus. Donec aliquet, erat vitae faucibus sodales, ex nisl porta dolor, vitae ultricies est ligula eget sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus vitae euismod lacus. Praesent accumsan faucibus egestas. Pellentesque id velit ac ex imperdiet molestie at at justo. Cras congue a mi a laoreet. Proin molestie sed risus id euismod. Vestibulum sit amet mattis diam. Nam scelerisque consequat orci et porttitor. Mauris posuere urna a tellus mattis, at consectetur lectus aliquet. Quisque auctor dolor vitae.
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer></footer>
+  </div>
+  <script>var serv=document.getElementById("services");serv.addEventListener("click",()=>{document.querySelector(".sevices-hidden-field").classList.toggle("sevices-visible-field")});</script>
+  <script>var serv=document.getElementById("alterBurg");serv.addEventListener("click",()=>{document.querySelector(".vertical-header-altern").style.display="none"});</script>
+  <script>window.onscroll=function(){myFunction()};var navbar=document.getElementById("navbar"),sticky=navbar.offsetTop;function myFunction(){window.pageYOffset>=sticky?navbar.classList.add("sticky"):navbar.classList.remove("sticky")}</script>
+  <script>let hide=document.querySelector(".hidenav");hide.addEventListener("click",()=>{document.querySelector(".vertical-header-altern").style.display="flex"});</script>
+    <script>var cat=document.getElementById("categories");cat.addEventListener("click",()=>{document.querySelector(".nav-content-hidden").classList.toggle("nav-content-visible"),document.querySelector(".preventActive").classList.toggle("active")});</script>
+    <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<script>
+function clone() {
+  var itm = document.querySelector(".m-f")
+  var cln = itm.cloneNode(true);
+  document.querySelector(".f-c").appendChild(cln);
+  var val = document.createElement("span")
+  val.classList.add("cloneDescr")
+    document.querySelector(".f-c").appendChild(val);
+    var elems  = document.querySelectorAll(".m-f")
+    val.innerHTML = elems.length;
+    var remove = document.createElement("span")
+    remove.classList.add("itemRem")
+    document.querySelector(".f-c").appendChild(remove);
+        remove.addEventListener("click", () => {
+      cln.style.display= 'none'
+      remove.style.display= 'none'
+      val.style.display= 'none'
+    })
+}
+</script>
+<script>
+  function sidenavVis(){
+    document.querySelector(".header-vertical").classList.add("header-vertical-vis")
+  }
+  function hideSidenav(){
+    document.querySelector(".header-vertical").classList.remove("header-vertical-vis")
+  }
+  function showTopnav(){
+    document.querySelector(".horizonSidenav").classList.add("horizonSidenav-vis")
+  }
+  function hideTopnav(){
+    document.querySelector(".horizonSidenav").classList.remove("horizonSidenav-vis")
+  }
+  function closecats(){
+    document.querySelector(".nav-content-hidden").classList.remove("nav-content-visible")
+  }
+</script>
+</body>
+</html>

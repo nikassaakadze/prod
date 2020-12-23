@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/tickets.css">
+    <link rel="stylesheet" href="./css/cookit.css">
+</head>
+<body>
+    <div class="horizonSidenav">
+        <nav>
+            <ul>
+                <li><a href="./news.html">NEWS</a></li>
+                <li><a href="./index.html">SHOPPING</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="./avia-tickets.html">TICEKETS</a></li>
+            </ul>
+        </nav>
+        <button onclick="hideTopnav()" class="vert-sidenav-hide">X</button>
+    </div>
+    <div class="root">
+        <div class="header-vertical">
+            <header>
+                <div class="logo"> <a href="./index.html"><h4>LOGO</h4></a> </div>
+                <nav class="vertical-navlist">
+                    <ul>
+                        <li>
+                            <a href="./index.html"><img src="./static/header-vertical/home.svg" alt=""><span>Home</span></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="./static/header-vertical/about.svg" alt=""><span>About</span></a>
+                        </li>
+                        <li id="trends">
+                            <a href="#"><img src="./static/header-vertical/stat.svg" alt=""><span>Trending</span></a>
+                        </li>
+                        <li class="preventActive" id="categories">
+                            <a href="#"><img src="./static/header-vertical/list.svg" alt=""><span>Categories</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="responsive-hide"> <img onclick="hideSidenav()" src="./static/icon/visibility.svg" alt=""> </div>
+            </header>
+        </div>
+        <div class="content">
+            <div class="header-horizon">
+                <nav>
+                    <ul>
+                        <li><a href="./news.html">NEWS</a></li>
+                        <li><a href="./index.html">SHOPPING</a></li>
+                        <li id="services"><a href="#">SERVICES</a></li>
+                        <li><a href="./avia-tickets.html">TICEKETS</a></li>
+                    </ul>
+                </nav>
+                <div class="resp-header">
+                    <div class="sidenav"> <img onclick="sidenavVis()" src="./static/icon/right-arrow.png" alt=""> </div><a href="./index.html"><h4>LOGO</h4></a>
+                    <div class="resp-burger"> <img onclick="showTopnav()" src="./static/header-vertical/menu-of-three-lines.svg" alt=""> </div>
+                </div>
+            </div>
+            <div class="sevices-hidden-field">
+                <div class="sevices-hidden-field-inner">
+                    <ul>
+                        <li>
+                            <a href="./services.html"><img src="./static/serv/hotel.svg" alt=""><span>Hotel</span></a>
+                        </li>
+                        <li>
+                            <a href="./services.html"><img src="./static/serv/restaurant.svg" alt=""><span>Restaurant</span></a>
+                        </li>
+                        <li>
+                            <a href="./services.html"><img src="./static/serv/dumbbell.svg" alt=""><span>Sport</span></a>
+                        </li>
+                        <li>
+                            <a href="./services.html"><img src="./static/serv/beauty-salon.svg" alt=""><span>Beauty salons</span></a>
+                        </li>
+                        <li>
+                            <a href="./services.html"><img src="./static/serv/swimming.svg" alt=""><span>Swimming pools</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="breadcumb"> <img style="right: 66px;" src="./static/icon/up-arrow.svg" alt=""> </div>
+            <div class="horizon-searchbar" style="margin: 0;">
+                <div class="horizon-searchbar-inner">
+                    <form action="">
+                        <input type="text">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="nav-content-hidden">
+                <div class="nav-content-center">
+                    <button onclick="closecats()" class="cat">X</button>
+                    <div class="cats-main">
+                      <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 't1')" id="defaultOpen">Leisure & Outdoors</button>
+                        <button class="tablinks" onclick="openCity(event, 't2')">Baby & Child</button>
+                        <button class="tablinks" onclick="openCity(event, 't3')">Home & Garden</button>
+                        <button class="tablinks" onclick="openCity(event, 't4')">Beverages</button>
+                        <button class="tablinks" onclick="openCity(event, 't5')">Toys & Gaming</button>
+                        <button class="tablinks" onclick="openCity(event, 't6')">Health & Pharmacy</button>
+                        <button class="tablinks" onclick="openCity(event, 't7')">Car & Motorcycle</button>
+                        <button class="tablinks" onclick="openCity(event, 't8')">Fashion & Accessories</button>
+                        <button class="tablinks" onclick="openCity(event, 't9')">Pet Supplies</button>
+                      </div>
+                    </div>
+                    <div id="t1" class="tabcontent">
+                      <div class="cats-in">
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div id="t2" class="tabcontent">
+                      <div class="cats-in">
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div id="t3" class="tabcontent">
+                      <div class="cats-in">
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div id="t4" class="tabcontent">
+                      <div class="cats-in">
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div id="t5" class="tabcontent">
+                      <div class="cats-in">
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div id="t6" class="tabcontent">
+                      <div class="cats-in">
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div id="t7" class="tabcontent">
+                      <div class="cats-in">
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div id="t8" class="tabcontent">
+                      <div class="cats-in">
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div id="t9" class="tabcontent">
+                      <div class="cats-in">
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                            <li><a href="./search.html">Compact Digital Cameras</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-content-hidden" id="trend">
+                <div class="nav-content-center">
+                  <button onclick="closeTrend()" class="cat">X</button>
+                    <div class="cats-main"> </div>
+                    <div class="cats-in">
+                        <ul>
+                            <li><a href="./search.html">Espresso Machines</a></li>
+                            <li><a href="./search.html">Espresso Machines</a></li>
+                            <li><a href="./search.html">Espresso Machines</a></li>
+                            <li><a href="./search.html">Espresso Machines</a></li>
+                            <li><a href="./search.html">Espresso Machines</a></li>
+                            <li><a href="./search.html">Espresso Machines</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./search.html">Games & Electronic Toys</a></li>
+                            <li><a href="./search.html">Games & Electronic Toys</a></li>
+                            <li><a href="./search.html">Games & Electronic Toys</a></li>
+                            <li><a href="./search.html">Games & Electronic Toys</a></li>
+                            <li><a href="./search.html">Games & Electronic Toys</a></li>
+                            <li><a href="./search.html">Games & Electronic Toys</a></li>
+                            <li><a href="./search.html">Games & Electronic Toys</a></li>
+                            <li><a href="./search.html">Games & Electronic Toys</a></li>
+                            <li><a href="./search.html">Games & Electronic Toys</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-products-field" style="margin-top: 70px;">
+                <div class="popular-products-field-inner">
+                    <h2 class="products-headline">Most Popular Products</h2>
+                    <div class="popular-products-field-inner-grid">
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-products-field sale-products">
+                <div class="popular-products-field-inner">
+                    <h2 class="products-headline">Sale Products</h2>
+                    <div class="popular-products-field-inner-grid">
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./product.html">
+                            <div class="product">
+                                <div class="product-visual"> <img src="./static/prod/ip.png" alt=""> </div>
+                                <div class="product-description">
+                                    <p>iPhone 11 Pro Max</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <section class="text">
+                <div class="text-inner">
+                    <h2></h2>
+                    <p> Integer sollicitudin, enim ornare faucibus luctus, felis diam ultrices leo, nec gravida sem sapien ac leo. Duis venenatis sed felis sed bibendum. Nam facilisis suscipit nibh quis condimentum. Ut mollis est at nulla mattis molestie.
+                        Cras euismod enim vitae vulputate lacinia. Ut augue leo, maximus at elementum vestibulum, tempor at purus. Duis nisi nisl, mattis sit amet lacinia et, lacinia non tortor. Vestibulum mollis, ligula sed venenatis ullamcorper, ligula
+                        neque luctus magna, sit amet interdum dui mauris vel enim. In rhoncus malesuada nibh. Duis mollis odio id hendrerit auctor.
+                        <br>
+                        <br>Ut dapibus ex augue, non sodales mauris fringilla nec. Phasellus bibendum nulla justo, id pellentesque nunc facilisis quis. Donec nec nibh vitae nisi elementum pulvinar. Phasellus sed velit cursus, viverra nisl vel, facilisis mauris.
+                        Suspendisse venenatis mi at purus placerat, eu rhoncus orci condimentum. Nullam ut justo bibendum arcu placerat accumsan vel a massa. Sed maximus maximus varius. Phasellus lacinia eros velit, sed posuere justo porttitor id. Mauris
+                        ac vestibulum sem. Phasellus a fringilla odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean rutrum libero eget libero bibendum pretium. Mauris lacinia mi ut fringilla semper. Donec
+                        bibendum lorem condimentum, aliquam ipsum quis, tempus velit. Suspendisse aliquam, leo at gravida dapibus, nisi augue faucibus mi, nec feugiat massa magna sit amet eros.
+                        <br>
+                        <br>Maecenas ac commodo nibh, rutrum condimentum lorem. Etiam at quam eu mi laoreet gravida a vel nunc. Vestibulum sollicitudin dolor odio, ut dapibus elit rhoncus ornare. Vivamus ut sapien blandit dolor semper tempus eu ac turpis.
+                        Proin quis nulla eget mauris mattis eleifend eget id nisl. Mauris convallis lacus ac sollicitudin fringilla. Phasellus iaculis feugiat lorem, ac varius nibh ullamcorper eget. Donec lectus orci, aliquam a arcu eget, egestas cursus
+                        mi.
+                        <br>
+                        <br>Nunc varius ipsum tortor, eu luctus arcu porttitor a. In eros lectus, tincidunt ut lacus at, aliquet dignissim lectus. Morbi id augue scelerisque, vehicula metus at, bibendum dui. Aenean at pellentesque elit, vitae posuere ligula.
+                        Vestibulum iaculis, nisl nec dapibus iaculis, diam arcu pulvinar nisi, malesuada fringilla velit magna ac neque. Nam eget mattis eros. Nullam sed consectetur lacus, eget vestibulum nisl. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Nulla tempus magna lectus. Sed porta blandit finibus. Morbi mollis ultrices metus eu finibus. Aenean suscipit orci cursus tortor convallis tempus. Pellentesque auctor tempus tempus. Cras posuere massa ac tellus
+                        scelerisque dapibus. Vestibulum imperdiet ligula sed congue porta. Nunc leo magna, malesuada non massa ut, maximus condimentum ante.
+                        <br>
+                        <br>Vivamus vel luctus est. Pellentesque a mauris risus. Suspendisse neque tellus, sagittis sed porttitor ut, aliquam eu diam. Phasellus quis neque vulputate, auctor sem eu, auctor sapien. Praesent euismod, diam sed eleifend ornare,
+                        lorem leo varius lorem, in luctus metus nulla vitae mi. Vestibulum in suscipit dolor. Nullam lorem lorem, consequat vel elit eu, malesuada fermentum turpis. Ut nisl risus, facilisis eu ex quis, euismod blandit mauris. Duis vitae
+                        ex eget turpis tristique consequat. Phasellus rutrum magna nec justo vehicula, vitae faucibus mi commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque. </p>
+                </div>
+                <div class="text-headline">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente beatae esse porro, sint culpa laboriosam suscipit autem atque at natus ut architecto deleniti saepe sed commodi, exercitationem similique maxime accusamus.</h5> </div>
+            </section>
+            <footer></footer>
+        </div>
+        <script src="./js/jQuery.js"></script>
+        <script src="./js/cookit.js"></script>
+        <script>
+            var serv=document.getElementById("services"); serv.addEventListener("click",()=>{document.querySelector(".sevices-hidden-field").classList.toggle("sevices-visible-field")});
+        </script>
+        <script>
+            var cat=document.getElementById("categories"); 
+            cat.addEventListener("click",()=>{
+              document.querySelector(".nav-content-hidden").classList.toggle("nav-content-visible"),
+              document.getElementById("trend").classList.remove("nav-content-visible")
+            }); 
+              
+              var tr=document.getElementById("trends"); 
+              tr.addEventListener("click",()=>{
+                document.getElementById("trend").classList.toggle("nav-content-visible")
+                document.querySelector(".nav-content-hidden").classList.remove("nav-content-visible")
+              })
+              function closeTrend(){
+                document.getElementById("trend").classList.remove("nav-content-visible")
+              }
+        </script>
+        <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+          </script>
+                  <script>
+                    function sidenavVis(){document.querySelector(".header-vertical").classList.add("header-vertical-vis")}function hideSidenav(){document.querySelector(".header-vertical").classList.remove("header-vertical-vis")}function showTopnav(){document.querySelector(".horizonSidenav").classList.add("horizonSidenav-vis")}function hideTopnav(){document.querySelector(".horizonSidenav").classList.remove("horizonSidenav-vis")}function closecats(){document.querySelector(".nav-content-hidden").classList.remove("nav-content-visible")}
+                </script>
+                <script>
+                    $(function(){$.cookit();});
+                </script>
+</body>
+
+</html>

@@ -1,0 +1,581 @@
+@import 'reset';
+@import "config";
+.hidenav{
+  position: absolute;
+  bottom: 5vh;
+  width: 100%;
+  text-align: center;
+  img{
+    height: 27px;
+    width: 27px;
+    cursor: pointer;
+  }
+}
+.cats-main{
+  ul{
+    li{
+      a:hover{
+        color: coral;
+      }
+    }
+  }
+}
+//hader horizon
+.header-vertical{
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 90px;
+  background-color: #1C2833;
+  header{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .logo{
+      position: absolute;
+      top: 50px;
+      width: 100%;
+      text-align: center;
+      a{
+        h4{
+          color: white;
+        }
+      }
+    }
+    .vertical-navlist{
+      width: 100%;
+      ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li{
+          margin: 20px 0;
+          a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+              height: 23px;
+            }
+            span{
+              color: white;
+              font-size: 14px;
+              margin-top: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//header vertical
+.header-horizon{
+  width: 100%;
+  nav{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 15px;
+    margin-top: 50px;
+    ul{
+      width: fit-content;
+      margin: auto;
+      li{
+        margin: 0 15px;
+        a{
+          color: #111;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+//horizon-searchbar
+.horizon-searchbar{
+  background-color: #1C2833;
+  width: 100%;
+  margin: 50px 0;
+  padding: 20px 0;
+  &-inner{
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px;
+    form{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 40px;
+      input{
+        flex: 1;
+        height: 100%;
+        font-size: 20px;
+        padding: 0 20px;
+        border: none;
+      }
+      button{
+        min-width: 40px;
+        height: 100%;
+        border: none;
+        background-image: url('../static/header-horizon/loupe.svg');
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.horizon-searchbar{
+  margin: 0 0 50px 0;
+}
+//sevices-hidden-field
+.sevices-hidden-field{
+  width: 100%;
+  height: 0px;
+  transition: .2s;
+  overflow: hidden;
+  visibility: hidden;
+  &-inner{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 15px;
+    ul{
+      width: 100%;
+      display: flex;
+      li{
+        flex: 1;
+        margin: 0 10px;
+        background-color: #1C2833;
+        height: 170px;
+        border-radius: 5px;
+        a{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          img{
+            height: 40px;
+            width: 40px;
+          }
+          span{
+            color: white;
+            font-size: 18px;
+            margin-top: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+.sevices-visible-field{
+  height: 170px;
+  visibility: visible;
+  transition: .2s;
+  margin-top: 20px;
+}
+
+//nav hidden
+.nav-content-hidden{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 90px;
+  height: 0%;
+  visibility: hidden;
+  overflow: hidden;
+  transition: .1s;
+  display: flex;
+  padding: 50px;
+  .cats-main{
+    border-right: 1px solid #ffffff;
+    padding-right: 40px;
+    ul{
+      display: flex;
+      flex-direction: column;
+      a{
+        color: white;
+      }
+      li{
+        margin: 5px 0;
+      }
+    }
+    .tab {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+    .tab button {
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 17px;
+      color: white;
+      background: transparent;
+      text-align: left;
+      margin: 5px 0;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      color: coral;
+    }
+    
+    /* Create an active/current tablink class */
+    .tab button.active {
+      color: coral;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+  }
+  .cats-in{
+    display: flex;
+    margin-left: 50px;
+    ul{
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px;
+      li{
+        margin: 5px 0;
+      }
+      a{
+        color: white;
+      }
+    }
+  }
+  .nav-content-center{
+    background-color: #1C2833;
+    width: 100%;
+    height: 100%;
+    padding: 30px ;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+}
+.nav-content-visible{
+  height: 100%;
+  visibility: visible;
+  transition: .3s;
+  background-color: rgba(255, 255, 255, 0.645);
+  z-index: 2000;
+  
+}
+
+footer{
+  width: 100%;
+  height: 300px;
+  background-image: url('../static/footer.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.resp-burger{
+  display: none;
+}
+.resp-header{
+  display: none;
+}
+
+.header-vertical-vis{
+  display: block !important;
+  z-index: 2000;
+}
+.responsive-hide{
+  display: none;
+  position: absolute;
+  bottom: 10vh;
+  width: 100%;
+  text-align: center;
+  img{
+    height: 20px;
+  }
+}
+.horizonSidenav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0%;
+  visibility: hidden;
+  overflow: hidden;
+  background-color: #1C2833;
+  z-index: 3000;
+  transition: .2s;
+  ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &:last-child{
+      border-bottom: 1px solid #111;
+    }
+    li{
+      border-top: 1px solid #111;
+      padding: 10px 0;
+      a{
+        color: white;
+      }
+    }
+  }
+  .vert-sidenav-hide{
+    position: absolute;
+    bottom: 1vh;
+    right: 1vh;
+    background-color: white;
+    color: black;
+    padding:5px 10px;
+    border: 0;
+  }
+}
+.horizonSidenav-vis{
+  height: 40%;
+  visibility: visible;
+  transition: .2s;
+}
+.cat{
+  padding: 5px 10px;
+  border: none;
+  color: black;
+  background-color: white;
+  position: absolute;
+  top: 1vh;
+  right: 1vh;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px){
+  .slick-next:before{
+    display: none !important;
+  }
+  .sevices-hidden-field{
+    display: none;
+  }
+  .slick-prev:before{
+    display: none !important;
+  }
+  .book-inner .fields .fields-line{
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .book-inner .book-option{
+    flex-direction: column;
+    margin-left: 0 !important;
+  }
+  .book-inner .book-option .option-two{
+    margin-left: 0 !important;
+  }
+  .book-inner .r-f-o{
+    margin-left: 0 !important;
+  }
+  .book-inner .search-btns{
+    margin-left: 0 !important;
+  }
+  .popular-flights-inner{
+    flex-direction: column;
+  }
+  .popular-flights-inner{
+    flex-direction: column;
+  }
+  .popular-flights-inner-left{
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)) !important;
+  }
+  .popular-flights-inner-right{
+    width: 100% !important;
+    margin-top: 50px;
+  }
+  .book{
+    margin-top: 0 !important;
+  }
+  .cat{
+    display: block;
+  }
+  .nav-content-hidden{
+    left: 1vh;
+    right: 1vh;
+    padding: 10px;
+  }
+  .nav-content-hidden .nav-content-center{
+    flex-direction: column;
+    overflow-y: scroll;
+
+  }
+  .nav-content-hidden .cats-in{
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .header-vertical{
+    display: none;
+  }
+  .responsive-hide{
+    display: block;
+  }
+  .root .content{
+    margin-left: 0 !important;
+  }
+  .horizon-searchbar-inner form{
+    position: relative;
+  }
+  .horizon-searchbar-inner form input{
+    position: absolute;
+    width: 100%;
+  }
+  .horizon-searchbar-inner form button{
+    position: absolute;
+    right: 0;
+  }
+  .breadcumb{
+    display: none;
+  }
+  .resp-burger{
+    display: none;
+  }
+  .header-horizon nav{
+    display: none;
+  }
+  .resp-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    .sidenav{
+      img{
+        height: 25px;
+        border: 1px solid #999;
+        padding: 4px;
+      }
+    }
+  }
+  .resp-burger{
+    display: block;
+    img{
+      height: 25px;
+    }
+  }
+  .vertical-header-altern{
+    display: none;
+  }
+  .text{
+    flex-direction: column;
+    .text-inner{
+      width: 100% !important;
+    }
+  }
+  .images{
+    grid-template-columns: none !important;
+  }
+  .ab-product{
+    flex-direction: column;
+    padding: 0 15px !important;
+  }
+  .ab-product .product-description{
+    width: 100% !important;
+  }
+  .ab-product .product-image{
+    width: 100% !important;
+  }
+  .ab-product .product-description .about-product{
+    flex-direction: column;
+  }
+  .ab-product .product-description .about-product .specification{
+    width: 100% !important;
+  }
+  .ab-product .product-description .about-product .price-stat{
+    width: 100% !important;
+  }
+  #area-chart{
+    canvas{
+      width: 100% !important;
+    }
+  }
+  .related-products{
+    padding: 30px 15px !important;
+    // overflow: auto;
+  }
+  .related-products-inner-prodItem{
+    flex-direction: column;
+    align-items: center;
+  }
+  .mag-map-popup iframe{
+    width: 95% !important;
+  }
+  .ab-product .product-description .about-product .specification .product-sp-popup .product-sp-popup-inner{
+    width: 95% !important;
+  }
+  .slick-prev,.slick-next{
+    display: none !important;
+  }
+  .additional-searchbar-inner form{
+    flex-direction: column;
+    height: auto !important;
+    input, button{
+      padding: 15px 45px !important;
+      margin: 5px 15px !important;
+    }
+  }
+  #slide{
+    max-width: 100% !important;
+  }
+  .place-descrptn{
+    max-width: 100% !important;
+  }
+  .additional-searchbar{
+    margin-top: 0 !important;
+  }
+  .additional-searchbar-inner{
+    flex-direction: column;
+    align-items: flex-start;
+    .burger-for-drpdwn{
+      margin-right: 280px;
+    }
+  }
+  .sort-product .select-items div, .sort-product .select-selected{
+    margin-right: 15px;
+  }
+  .related-flights-inner{
+    flex-direction: column;
+  }
+  .related-flights-inner .fl-left{
+    width: 100% !important;
+  }
+  .related-flights-inner .fl-right{
+    width: 100% !important;
+  }
+  .f-det{
+    width: 90% !important;
+  }
+  .book-inner .fields .fields-line .input{
+    width: 100%;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

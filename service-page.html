@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/tickets.css">
+  <link rel="stylesheet" href="./css/search.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/product.css">
+  <link rel="stylesheet" href="./css/service.css">
+  <link rel="stylesheet" href="./css/service-page.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/jQuery.js"></script>
+</head>
+<body>
+  <div class="horizonSidenav">
+    <nav>
+      <ul>
+        <li><a href="./news.html">NEWS</a></li>
+        <li><a href="./index.html">SHOPPING</a></li>
+        <li id="services"><a href="#">SERVICES</a></li>
+        <li><a href="./avia-tickets.html">TICEKETS</a></li>
+      </ul>
+    </nav>
+    <button onclick="hideTopnav()" class="vert-sidenav-hide">X</button>
+  </div>
+  <div class="root">
+    <div class="vertical-header-altern">
+      <div class="logo"><a href="./index.html"><h4>LOGO</h4></a></div>
+    </div>
+    <div class="content" >
+      <div class="header-horizon">
+        <nav id="navbar">
+          <ul>
+            <li><a href="./news.html">NEWS</a></li>
+            <li><a href="./index.html">SHOPPING</a></li>
+            <li id="services"><a href="#">SERVICES</a></li>
+            <li><a href="./avia-tickets.html">TICEKETS</a></li>
+          </ul>
+        </nav>
+        <div class="resp-header">
+          <a href="./index.html"><h4>LOGO</h4></a>
+          <div class="resp-burger">
+            <img onclick="showTopnav()" src="./static/header-vertical/menu-of-three-lines.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="sevices-hidden-field">
+        <div class="sevices-hidden-field-inner">
+          <ul>
+            <li><a href="./services.html"><img src="./static/serv/hotel.svg" alt=""><span>Hotel</span></a></li>
+            <li><a href="./services.html"><img src="./static/serv/restaurant.svg" alt=""><span>Restaurant</span></a></li>
+            <li><a href="./services.html"><img src="./static/serv/dumbbell.svg" alt=""><span>Sport</span></a></li>
+            <li><a href="./services.html"><img src="./static/serv/beauty-salon.svg" alt=""><span>Beauty salons</span></a></li>
+            <li><a href="./services.html"><img src="./static/serv/swimming.svg" alt=""><span>Swimming pools</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="breadcumb">
+        <img style="left: 40px;" src="./static/icon/up-arrow.svg" alt="">
+      </div>
+      <div class="additional-searchbar" style="margin-top: 0;">
+          <div class="additional-searchbar-inner">
+              <form action="">
+                  <input class="search" type="search" placeholder="Type here...">
+                  <input class="date" type="date">
+                  <input class="date" type="date">
+                  <input class="location" type="text" placeholder="Location">
+                  <button type="submit">Search</button>
+              </form>
+          </div>
+      </div>
+      <div class="place">
+        <div class="fullscreen-container hidden">
+          <div class='fullscreen-div'>
+            <img class="remove-fullscreen" src="./static/icon/remove_icon.webp" width="60" />
+          </div>
+      </div>
+      <div id="gallery">
+        <div id="slide">
+          <a class="prev">❮</a>
+          <a class="next">❯</a>
+          <img class="toggleDiapo" src="./static/icon/pause_diapo.png" width="40" />
+          <img class="fullscreen" src="./static/icon/fullscreen.png" width="30" />
+          <img id='preview' />
+        </div>
+    
+        <div id="thumbnails">
+          <div class="wrapper">
+            <img src="https://picsum.photos/500/500" class="thumbnail" alt="jQueryScript">
+            <img src="https://picsum.photos/260/700" class="thumbnail" alt="jQueryScript">
+            <img src="https://picsum.photos/243/500" class="thumbnail" alt="jQueryScript">
+            <img src="https://picsum.photos/200/300" class="thumbnail" alt="jQueryScript">
+            <img src="https://picsum.photos/200/340" class="thumbnail" alt="jQueryScript">
+            <img src="https://picsum.photos/300/300" class="thumbnail" alt="jQueryScript">
+            <img src="https://picsum.photos/200/300" class="thumbnail" alt="jQueryScript">
+            <img src="https://picsum.photos/300/330" class="thumbnail" alt="jQueryScript">
+            <img src="https://picsum.photos/200/300" class="thumbnail" alt="jQueryScript">
+            <img src="https://picsum.photos/230/303" class="thumbnail" alt="jQueryScript">
+            <img src="https://picsum.photos/200/300" class="thumbnail" alt="jQueryScript">
+            <img src="https://picsum.photos/200/350" class="thumbnail" alt="jQueryScript">
+            <img src="https://picsum.photos/270/300" class="thumbnail" alt="jQueryScript">
+          </div>
+        </div>
+    </div>
+      </div>
+      <div class="place-descrptn">
+        <h3>Curabitur ipsum risus, condimentum non.</h3>
+        <p>
+          Donec semper sodales efficitur. Vestibulum massa mauris, efficitur eu vestibulum quis, 
+          mattis ac est. Donec vel mollis libero. Nulla auctor dictum ligula, eu suscipit lectus 
+          faucibus at. Praesent non dictum felis, eget placerat enim. Vivamus sollicitudin posuere 
+          quam, nec vehicula ex tempus vitae. Cras rhoncus ligula vel lorem laoreet, et.
+        </p>
+        <br>
+        <p>
+          Donec semper sodales efficitur. Vestibulum massa mauris, efficitur eu vestibulum quis, 
+          mattis ac est. Donec vel mollis libero. Nulla auctor dictum ligula, eu suscipit lectus 
+          faucibus at. Praesent non dictum felis, eget placerat enim. Vivamus sollicitudin posuere 
+          quam, nec vehicula ex tempus vitae. Cras rhoncus ligula vel lorem laoreet, et.
+        </p>
+        <br>
+        <p>
+          Donec semper sodales efficitur. Vestibulum massa mauris, efficitur eu vestibulum quis, 
+          mattis ac est. Donec vel mollis libero. Nulla auctor dictum ligula, eu suscipit lectus 
+          faucibus at. Praesent non dictum felis, eget placerat enim. Vivamus sollicitudin posuere 
+          quam, nec vehicula ex tempus vitae. Cras rhoncus ligula vel lorem laoreet, et.
+        </p>
+      </div>
+      <input type='hidden' id='current_page' />
+      <input type='hidden' id='show_per_page' />
+      <div class="diff-prices" id="pagingBox">
+        <div class="diff-prices-item">
+          <div class="place-item-left">
+            <div class="companyLogo">
+              <img src="https://seeklogo.com/images/B/booking-logo-504475D532-seeklogo.com.png" alt="">
+            </div>
+            <div class="place-option">
+              <span>Superior Double Bed</span>
+            </div>
+          </div>
+          <div class="place-item-left">
+            <div class="room-price">
+              <span>200₾</span>
+            </div>
+            <button>View deal</button>
+          </div>
+        </div>
+        <div class="diff-prices-item">
+          <div class="place-item-left">
+            <div class="companyLogo">
+              <img src="https://seeklogo.com/images/B/booking-logo-504475D532-seeklogo.com.png" alt="">
+            </div>
+            <div class="place-option">
+              <span>Superior Double Bed</span>
+            </div>
+          </div>
+          <div class="place-item-left">
+            <div class="room-price">
+              <span>200₾</span>
+            </div>
+            <button>View deal</button>
+          </div>
+        </div>
+        <div class="diff-prices-item">
+          <div class="place-item-left">
+            <div class="companyLogo">
+              <img src="https://seeklogo.com/images/B/booking-logo-504475D532-seeklogo.com.png" alt="">
+            </div>
+            <div class="place-option">
+              <span>Superior Double Bed</span>
+            </div>
+          </div>
+          <div class="place-item-left">
+            <div class="room-price">
+              <span>200₾</span>
+            </div>
+            <button>View deal</button>
+          </div>
+        </div>
+        <div class="diff-prices-item">
+          <div class="place-item-left">
+            <div class="companyLogo">
+              <img src="https://seeklogo.com/images/B/booking-logo-504475D532-seeklogo.com.png" alt="">
+            </div>
+            <div class="place-option">
+              <span>Superior Double Bed</span>
+            </div>
+          </div>
+          <div class="place-item-left">
+            <div class="room-price">
+              <span>200₾</span>
+            </div>
+            <button>View deal</button>
+          </div>
+        </div>
+        <div class="diff-prices-item">
+          <div class="place-item-left">
+            <div class="companyLogo">
+              <img src="https://seeklogo.com/images/B/booking-logo-504475D532-seeklogo.com.png" alt="">
+            </div>
+            <div class="place-option">
+              <span>Superior Double Bed</span>
+            </div>
+          </div>
+          <div class="place-item-left">
+            <div class="room-price">
+              <span>200₾</span>
+            </div>
+            <button>View deal</button>
+          </div>
+        </div>
+        <div class="diff-prices-item">
+          <div class="place-item-left">
+            <div class="companyLogo">
+              <img src="https://seeklogo.com/images/B/booking-logo-504475D532-seeklogo.com.png" alt="">
+            </div>
+            <div class="place-option">
+              <span>Superior Double Bed</span>
+            </div>
+          </div>
+          <div class="place-item-left">
+            <div class="room-price">
+              <span>200₾</span>
+            </div>
+            <button>View deal</button>
+          </div>
+        </div>
+        <div class="diff-prices-item">
+          <div class="place-item-left">
+            <div class="companyLogo">
+              <img src="https://seeklogo.com/images/B/booking-logo-504475D532-seeklogo.com.png" alt="">
+            </div>
+            <div class="place-option">
+              <span>Superior Double Bed</span>
+            </div>
+          </div>
+          <div class="place-item-left">
+            <div class="room-price">
+              <span>200₾</span>
+            </div>
+            <button>View deal</button>
+          </div>
+        </div>
+        <div class="diff-prices-item">
+          <div class="place-item-left">
+            <div class="companyLogo">
+              <img src="https://seeklogo.com/images/B/booking-logo-504475D532-seeklogo.com.png" alt="">
+            </div>
+            <div class="place-option">
+              <span>Superior Double Bed</span>
+            </div>
+          </div>
+          <div class="place-item-left">
+            <div class="room-price">
+              <span>200₾</span>
+            </div>
+            <button>View deal</button>
+          </div>
+        </div>
+        <div class="diff-prices-item">
+          <div class="place-item-left">
+            <div class="companyLogo">
+              <img src="https://seeklogo.com/images/B/booking-logo-504475D532-seeklogo.com.png" alt="">
+            </div>
+            <div class="place-option">
+              <span>Superior Double Bed</span>
+            </div>
+          </div>
+          <div class="place-item-left">
+            <div class="room-price">
+              <span>200₾</span>
+            </div>
+            <button>View deal</button>
+          </div>
+        </div>
+      </div>
+          <div class="product-list">
+          <div id='page_navigation'></div>
+         </div>
+         <div class="place-features">
+           <table>
+             <tbody>
+               <tr>
+                 <td>General</td>
+                 <td>Room Service, Restaurant, Pet Friendly, Bar / Lounge, Air Conditioned, Mini Bar, Cable / Satellite TV, Hair Dryer, TV, Desk, En suite, Private Bathroom</td>
+               </tr>
+               <tr>
+                 <td>Garden</td>
+                 <td>Room Service, Restaurant, Pet Friendly, Bar / Lounge, Air Conditioned, Mini Bar, Cable / Satellite TV, Hair Dryer, TV, Desk, En suite, Private Bathroom</td>
+               </tr>
+               <tr>
+                 <td>General</td>
+                 <td>Concierge, Elevator / Lift, 24-Hour Reception, Dry Cleaning, Currency Exchange, Multilingual Staff, Safe-Deposit Box, ATM / Cash Machine, Wake-up Service, Meeting Rooms, Laundry service, Photocopier, Luggage Storage</td>
+               </tr>
+               <tr>
+                 <td>General</td>
+                 <td>Wireless internet on site.</td>
+               </tr>
+               <tr>
+                 <td>General</td>
+                 <td>From 2:00 PM</td>
+               </tr>
+               <tr>
+                 <td>General</td>
+                 <td>Room Service, Restaurant, Pet Friendly, Bar / Lounge, Air Conditioned, Mini Bar, Cable / Satellite TV, Hair Dryer, TV, Desk, En suite, Private Bathroom</td>
+               </tr>
+               <tr>
+                 <td>General</td>
+                 <td>Room Service, Restaurant, Pet Friendly, Bar / Lounge, Air Conditioned, Mini Bar, Cable / Satellite TV, Hair Dryer, TV, Desk, En suite, Private Bathroom</td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+    </div>
+    <footer></footer>
+  </div>
+  <script src="./js/slider.js"></script>
+  <script></script>
+  <script>var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-36251023-1"]),_gaq.push(["_setDomainName","jqueryscript.net"]),_gaq.push(["_trackPageview"]),function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();</script>
+  <script>$(".regular").slick({dots:!1,infinite:!0,slidesToShow:3,slidesToScroll:3});</script>
+  <script src="./js/slick.js"></script>
+  <script>var serv=document.getElementById("services");serv.addEventListener("click",()=>{document.querySelector(".sevices-hidden-field").classList.toggle("sevices-visible-field")});</script>
+  <script>var serv=document.getElementById("alterBurg");serv.addEventListener("click",()=>{document.querySelector(".vertical-header-altern").style.display="none"});</script>
+  <script>window.onscroll=function(){myFunction()};var navbar=document.getElementById("navbar"),sticky=navbar.offsetTop;function myFunction(){window.pageYOffset>=sticky?navbar.classList.add("sticky"):navbar.classList.remove("sticky")}</script>
+  <script>var filter=document.getElementById("filters");filter.addEventListener("click",()=>{document.querySelector(".filter-list").classList.toggle("filter-list-visible")});</script>
+  <script>function openmanuf(){document.getElementById("manuf").classList.toggle("filter-visible")}function opentype(){document.getElementById("type").classList.toggle("filter-visible")}function openColor(){document.getElementById("color").classList.toggle("filter-visible")}function openext(){document.getElementById("ext").classList.toggle("filter-visible")}function openmaxext(){document.getElementById("maxext").classList.toggle("filter-visible")}function opencon(){document.getElementById("contr").classList.toggle("filter-visible")}function openen(){document.getElementById("energy").classList.toggle("filter-visible")}function opengras(){document.getElementById("grass").classList.toggle("filter-visible")}function openW(){document.getElementById("width").classList.toggle("filter-visible")}function openDept(){document.getElementById("dept").classList.toggle("filter-visible")}function openSuit(){document.getElementById("suit").classList.toggle("filter-visible")}function openNoise(){document.getElementById("noise").classList.toggle("filter-visible")}function openImp(){document.getElementById("imp").classList.toggle("filter-visible")}</script>
+  <script>var x,i,j,l,ll,selElmnt,a,b,c;for(l=(x=document.getElementsByClassName("custom-select")).length,i=0;i<l;i++){for(ll=(selElmnt=x[i].getElementsByTagName("select")[0]).length,(a=document.createElement("DIV")).setAttribute("class","select-selected"),a.innerHTML=selElmnt.options[selElmnt.selectedIndex].innerHTML,x[i].appendChild(a),(b=document.createElement("DIV")).setAttribute("class","select-items select-hide"),j=1;j<ll;j++)(c=document.createElement("DIV")).innerHTML=selElmnt.options[j].innerHTML,c.addEventListener("click",function(e){var t,s,l,n,i,c,a;for(c=(n=this.parentNode.parentNode.getElementsByTagName("select")[0]).length,i=this.parentNode.previousSibling,s=0;s<c;s++)if(n.options[s].innerHTML==this.innerHTML){for(n.selectedIndex=s,i.innerHTML=this.innerHTML,a=(t=this.parentNode.getElementsByClassName("same-as-selected")).length,l=0;l<a;l++)t[l].removeAttribute("class");this.setAttribute("class","same-as-selected");break}i.click()}),b.appendChild(c);x[i].appendChild(b),a.addEventListener("click",function(e){e.stopPropagation(),closeAllSelect(this),this.nextSibling.classList.toggle("select-hide"),this.classList.toggle("select-arrow-active")})}function closeAllSelect(e){var t,s,l,n,i,c=[];for(t=document.getElementsByClassName("select-items"),s=document.getElementsByClassName("select-selected"),n=t.length,i=s.length,l=0;l<i;l++)e==s[l]?c.push(l):s[l].classList.remove("select-arrow-active");for(l=0;l<n;l++)c.indexOf(l)&&t[l].classList.add("select-hide")}document.addEventListener("click",closeAllSelect);</script>
+  <script>$(".regular").slick({dots:!1,infinite:!0,slidesToShow:3,slidesToScroll:3});</script>
+  <script>function previous(){new_page=parseInt($("#current_page").val())-1,1==$(".active_page").prev(".page_link").length&&go_to_page(new_page)}function next(){new_page=parseInt($("#current_page").val())+1,1==$(".active_page").next(".page_link").length&&go_to_page(new_page)}function go_to_page(a){var e=parseInt($("#show_per_page").val());start_from=a*e,end_on=start_from+e,$("#pagingBox").children().css("display","none").slice(start_from,end_on).css("display","flex"),$(".page_link[longdesc="+a+"]").addClass("active_page").siblings(".active_page").removeClass("active_page"),$("#current_page").val(a)}jQuery(document).ready(function(){var a=$("#pagingBox").children().size(),e=Math.ceil(a/6);$("#current_page").val(0),$("#show_per_page").val(6);for(var n="",g=0;e>g;)n+='<a class="page_link" href="javascript:go_to_page('+g+')" longdesc="'+g+'">'+(g+1)+"</a>",g++;n+="",$("#page_navigation").html(n),$("#page_navigation .page_link:first").addClass("active_page"),$("#pagingBox").children().css("display","none"),$("#pagingBox").children().slice(0,6).css("display","flex")});</script>
+  <script>let hide=document.querySelector(".hidenav");hide.addEventListener("click",()=>{document.querySelector(".vertical-header-altern").style.display="flex"});</script>
+  <script>
+    function sidenavVis(){
+      document.querySelector(".header-vertical").classList.add("header-vertical-vis")
+    }
+    function hideSidenav(){
+      document.querySelector(".header-vertical").classList.remove("header-vertical-vis")
+    }
+    function showTopnav(){
+      document.querySelector(".horizonSidenav").classList.add("horizonSidenav-vis")
+    }
+    function hideTopnav(){
+      document.querySelector(".horizonSidenav").classList.remove("horizonSidenav-vis")
+    }
+    function closecats(){
+      document.querySelector(".nav-content-hidden").classList.remove("nav-content-visible")
+    }
+  </script>  
+  <script>var cat=document.getElementById("categories");cat.addEventListener("click",()=>{document.querySelector(".nav-content-hidden").classList.toggle("nav-content-visible"),document.querySelector(".preventActive").classList.toggle("active")});</script>
+</body>
+</html>

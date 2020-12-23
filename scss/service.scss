@@ -1,0 +1,61 @@
+.prices{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span{
+        margin: 0 10px;
+    }
+    #before{
+        text-decoration: line-through;
+        color: #999;
+    }
+}
+.additional-searchbar{
+    width: 100%;
+    background-color: #1C2833;
+    margin-top: 40px;
+    padding: 40px 0;
+    position: relative;
+    &-inner{
+        .filter-list{
+            top: 80px;
+        }
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        form{
+            display: flex;
+            width: 100%;
+            height: 40px;
+            .search{
+                flex: 1;
+                margin-right: 10px;
+                border: none;
+                padding: 0 16px;
+            }
+            .date, .location{
+                flex: 0.5;
+                margin-right: 10px;
+                border: none;
+                padding: 0 16px;
+            }
+            .location{
+                background-image: url('../static/icon/placeholder.svg');
+                background-position-y:center ;
+                background-size: 20px;
+                background-position-x: 20px;
+                background-repeat: no-repeat;
+                padding-left: 45px;
+            }
+            button{
+                min-width: 70px;
+                background-color: white;
+                border: none;
+                color: #333;
+                cursor: pointer;
+            }
+        }
+    }
+}

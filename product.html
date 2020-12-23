@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/tickets.css">
+  <link rel="stylesheet" href="./css/search.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/product.css">
+</head>
+<body>
+  <div class="horizonSidenav">
+    <nav>
+      <ul>
+        <li><a href="./news.html">NEWS</a></li>
+        <li><a href="./index.html">SHOPPING</a></li>
+        <li><a href="./services.html">SERVICES</a></li>
+        <li><a href="./avia-tickets.html">TICEKETS</a></li>
+      </ul>
+    </nav>
+    <button onclick="hideTopnav()" class="vert-sidenav-hide">X</button>
+  </div>
+  <div class="nav-content-hidden">
+    <div class="nav-content-center">
+        <button onclick="closecats()" class="cat">X</button>
+        <div class="cats-main">
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 't1')" id="defaultOpen">Leisure & Outdoors</button>
+            <button class="tablinks" onclick="openCity(event, 't2')">Baby & Child</button>
+            <button class="tablinks" onclick="openCity(event, 't3')">Home & Garden</button>
+            <button class="tablinks" onclick="openCity(event, 't4')">Beverages</button>
+            <button class="tablinks" onclick="openCity(event, 't5')">Toys & Gaming</button>
+            <button class="tablinks" onclick="openCity(event, 't6')">Health & Pharmacy</button>
+            <button class="tablinks" onclick="openCity(event, 't7')">Car & Motorcycle</button>
+            <button class="tablinks" onclick="openCity(event, 't8')">Fashion & Accessories</button>
+            <button class="tablinks" onclick="openCity(event, 't9')">Pet Supplies</button>
+          </div>
+        </div>
+        <div id="t1" class="tabcontent">
+          <div class="cats-in">
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+        </div>
+        </div>
+        <div id="t2" class="tabcontent">
+          <div class="cats-in">
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+        </div>
+        </div>
+        <div id="t3" class="tabcontent">
+          <div class="cats-in">
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+        </div>
+        </div>
+        <div id="t4" class="tabcontent">
+          <div class="cats-in">
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+        </div>
+        </div>
+        <div id="t5" class="tabcontent">
+          <div class="cats-in">
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+        </div>
+        </div>
+        <div id="t6" class="tabcontent">
+          <div class="cats-in">
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+        </div>
+        </div>
+        <div id="t7" class="tabcontent">
+          <div class="cats-in">
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+        </div>
+        </div>
+        <div id="t8" class="tabcontent">
+          <div class="cats-in">
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+        </div>
+        </div>
+        <div id="t9" class="tabcontent">
+          <div class="cats-in">
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+                <li><a href="./search.html">Compact Digital Cameras</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="nav-content-hidden" id="trend">
+    <div class="nav-content-center">
+      <button onclick="closeTrend()" class="cat">X</button>
+        <div class="cats-main"> </div>
+        <div class="cats-in">
+            <ul>
+                <li><a href="./search.html">Espresso Machines</a></li>
+                <li><a href="./search.html">Espresso Machines</a></li>
+                <li><a href="./search.html">Espresso Machines</a></li>
+                <li><a href="./search.html">Espresso Machines</a></li>
+                <li><a href="./search.html">Espresso Machines</a></li>
+                <li><a href="./search.html">Espresso Machines</a></li>
+            </ul>
+            <ul>
+                <li><a href="./search.html">Games & Electronic Toys</a></li>
+                <li><a href="./search.html">Games & Electronic Toys</a></li>
+                <li><a href="./search.html">Games & Electronic Toys</a></li>
+                <li><a href="./search.html">Games & Electronic Toys</a></li>
+                <li><a href="./search.html">Games & Electronic Toys</a></li>
+                <li><a href="./search.html">Games & Electronic Toys</a></li>
+                <li><a href="./search.html">Games & Electronic Toys</a></li>
+                <li><a href="./search.html">Games & Electronic Toys</a></li>
+                <li><a href="./search.html">Games & Electronic Toys</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+  <div class="root">
+    <div class="vertical-header-altern">
+      <div class="logo"><a href="./index.html"><h4>LOGO</h4></a></div>
+      <div class="altern-nav-burger"><img id="alterBurg" src="./static/header-vertical/menu-of-three-lines.svg" alt=""></div>
+    </div>
+    <div class="header-vertical">
+      <header>
+        <div class="logo">
+          <a href="./index.html"><h4>LOGO</h4></a>
+        </div>
+        <nav class="vertical-navlist">
+          <ul>
+            <li><a href="./index.html"><img src="./static/header-vertical/home.svg" alt=""><span>Home</span></a></li>
+            <li><a href=""><img src="./static/header-vertical/about.svg" alt=""><span>About</span></a></li>
+            <li id="trends"><a href="#"><img src="./static/header-vertical/stat.svg" alt=""><span>Trending</span></a></li>
+            <li class="preventActive" id="categories"><a href="#"><img src="./static/header-vertical/list.svg" alt=""><span>Categories</span></a></li>
+          </ul>
+        </nav>
+        <div class="hidenav">
+          <img src="./static/icon/visibility.svg" alt="">
+        </div>
+      </header>
+    </div>
+    <div class="content">
+      <div class="header-horizon">
+        <nav id="navbar">
+          <ul>
+            <li><a href="./news.html">NEWS</a></li>
+            <li><a href="./index.html">SHOPPING</a></li>
+            <li id="services"><a href="#">SERVICES</a></li>
+            <li><a href="./avia-tickets.html">TICEKETS</a></li>
+          </ul>
+        </nav>
+        <div class="resp-header">
+          <div class="sidenav">
+            <img onclick="sidenavVis()" src="./static/icon/right-arrow.png" alt="">
+          </div>
+          <a href="./index.html"><h4>LOGO</h4></a>
+          <div class="resp-burger">
+            <img onclick="showTopnav()" src="./static/header-vertical/menu-of-three-lines.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="sevices-hidden-field">
+        <div class="sevices-hidden-field-inner">
+          <ul>
+            <li><a href="./services.html"><img src="./static/serv/hotel.svg" alt=""><span>Hotel</span></a></li>
+            <li><a href="./services.html"><img src="./static/serv/restaurant.svg" alt=""><span>Restaurant</span></a></li>
+            <li><a href="./services.html"><img src="./static/serv/dumbbell.svg" alt=""><span>Sport</span></a></li>
+            <li><a href="./services.html"><img src="./static/serv/beauty-salon.svg" alt=""><span>Beauty salons</span></a></li>
+            <li><a href="./services.html"><img src="./static/serv/swimming.svg" alt=""><span>Swimming pools</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="breadcumb"> <img style="right: 66px;" src="./static/icon/up-arrow.svg" alt=""> </div>
+      <div class="horizon-searchbar">
+        <div class="horizon-searchbar-inner" style="display: flex; align-items: center; position: relative;">
+          <form action="">
+            <input type="text">
+            <button type="submit"></button>
+          </form>
+        </div>
+      </div>
+      <div class="ab-product">
+        <div class="product-image">
+					<img src="./static/prod/ip.png" alt="">
+					<div class="product-name">
+						<h3>iPhone 12 Pro Max</h3>
+					</div>
+				</div>
+				<div class="product-description">
+					<div class="about-product">
+						<div class="specification">
+							<ul>
+								<li>
+									<h5>NETWORK</h5>
+									<span>GSM / CDMA / HSPA / EVDO / LTE</span>
+								</li>
+								<li>
+									<h5>LAUNCH</h5>
+									<span>2020, March 18</span>
+								</li>
+								<li>
+									<h5>BODY</h5>
+									<span>247.6 x 178.5 x 5.9 mm (9.75 x 7.03 x 0.23 in)</span>
+								</li>
+								<li>
+									<h5>DISPLAY</h5>
+									<span>IPS LCD, 120Hz, 600 nits (typ)</span>
+								</li>
+								<li>
+									<h5>PLATFORM</h5>
+									<span>iPadOS 13.4, upgradable to iPadOS 14.2</span>
+								</li>
+								<li>
+									<h5>MEMORY</h5>
+									<span>128GB 6GB RAM, 256GB 6GB RAM, 512GB 6GB RAM, 1TB 6GB RAM</span>
+								</li>
+								<li>
+									<h5>SOUND</h5>
+									<span>stereo speakers (4 speakers)</span>
+								</li>
+              </ul>
+              <button id="prod-popup" class="p-s">product specifications</button>
+              <div class="product-sp-popup">
+                <div class="product-sp-popup-inner">
+                  <button id="close-sp" class="close-sp">X</button>
+                  <div class="product-sp-popup-content">
+                    <ul>
+                      <li>
+                        <h5>NETWORK</h5>
+                        <span>GSM / CDMA / HSPA / EVDO / LTE</span>
+                      </li>
+                      <li>
+                        <h5>NETWORK</h5>
+                        <span>GSM / CDMA / HSPA / EVDO / LTE</span>
+                      </li>
+                      <li>
+                        <h5>NETWORK</h5>
+                        <span>GSM / CDMA / HSPA / EVDO / LTE</span>
+                      </li>
+                      <li>
+                        <h5>NETWORK</h5>
+                        <span>GSM / CDMA / HSPA / EVDO / LTE</span>
+                      </li>
+                      <li>
+                        <h5>NETWORK</h5>
+                        <span>GSM / CDMA / HSPA / EVDO / LTE</span>
+                      </li>
+                      <li>
+                        <h5>NETWORK</h5>
+                        <span>GSM / CDMA / HSPA / EVDO / LTE</span>
+                      </li>
+                      <li>
+                        <h5>LAUNCH</h5>
+                        <span>2020, March 18</span>
+                      </li>
+                      <li>
+                        <h5>BODY</h5>
+                        <span>247.6 x 178.5 x 5.9 mm (9.75 x 7.03 x 0.23 in)</span>
+                      </li>
+                      <li>
+                        <h5>DISPLAY</h5>
+                        <span>IPS LCD, 120Hz, 600 nits (typ)</span>
+                      </li>
+                      <li>
+                        <h5>PLATFORM</h5>
+                        <span>iPadOS 13.4, upgradable to iPadOS 14.2</span>
+                      </li>
+                      <li>
+                        <h5>MEMORY</h5>
+                        <span>128GB 6GB RAM, 256GB 6GB RAM, 512GB 6GB RAM, 1TB 6GB RAM</span>
+                      </li>
+                      <li>
+                        <h5>SOUND</h5>
+                        <span>stereo speakers (4 speakers)</span>
+                      </li>
+                      <li>
+                        <h5>SOUND</h5>
+                        <span>stereo speakers (4 speakers)</span>
+                      </li>
+                      <li>
+                        <h5>SOUND</h5>
+                        <span>stereo speakers (4 speakers)</span>
+                      </li>
+                      <li>
+                        <h5>SOUND</h5>
+                        <span>stereo speakers (4 speakers)</span>
+                      </li>
+                      <li>
+                        <h5>SOUND</h5>
+                        <span>stereo speakers (4 speakers)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+						<div class="price-stat">
+							<h4 class="prs-ch">Price change by years</h4>
+							<div id="area-chart" style="height: 240px; width: 100%;" ></div>
+						</div>
+					</div>
+				</div>
+      </div>
+      <div class="mag-map-popup" id="map">
+        <button onclick="clM()" id="cm" class="close-sp">X</button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11200.675829730526!2d-75.6876061!3d45.42609535!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04ff4fe494ef%3A0x26bb54f60c29f6e!2sParliament+Hill!5e0!3m2!1sen!2sca!4v1528808935681" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <section class="related-products">
+        <h3>Realted products</h3>
+        <input type='hidden' id='current_page' />
+        <input type='hidden' id='show_per_page' />
+        <div class="related-products-inner" id="pagingBox">
+          <div class="related-products-inner-prodItem">
+            <div class="prod-name">
+              <img src="./static/prod/ip.png" alt="">
+              <a href="./product.html">Smeg KSED65XE 60cm Chimney Cooker Hood</a>
+            </div>
+            <div class="prod-price">
+              <span>£302.00</span>
+            </div>
+            <div class="delivery-info">
+              <a href="">Check re­tail­er for de­liv­ery time</a>
+              <a href="">private countrie</a>
+            </div>
+            <div class="shop-magazine">
+              <a href="">
+                <img src="./static/800px-EBay_logo.svg.png" alt="">
+              </a>
+            </div>
+            <div class="shop-prod">
+              <button onclick="openMap()">Shop</button>
+            </div>
+          </div>
+          <div class="related-products-inner-prodItem">
+            <div class="prod-name">
+              <img src="./static/prod/ip.png" alt="">
+              <a href="./product.html">Smeg KSED65XE 60cm Chimney Cooker Hood</a>
+            </div>
+            <div class="prod-price">
+              <span>£302.00</span>
+            </div>
+            <div class="delivery-info">
+              <a href="">Check re­tail­er for de­liv­ery time</a>
+              <a href="">private countrie</a>
+            </div>
+            <div class="shop-magazine">
+              <a href="">
+                <img src="./static/800px-EBay_logo.svg.png" alt="">
+              </a>
+            </div>
+            <div class="shop-prod">
+              <button onclick="openMap()">Shop</button>
+            </div>
+          </div>
+          <div class="related-products-inner-prodItem">
+            <div class="prod-name">
+              <img src="./static/prod/ip.png" alt="">
+              <a href="./product.html">Smeg KSED65XE 60cm Chimney Cooker Hood</a>
+            </div>
+            <div class="prod-price">
+              <span>£302.00</span>
+            </div>
+            <div class="delivery-info">
+              <a href="">Check re­tail­er for de­liv­ery time</a>
+              <a href="">private countrie</a>
+            </div>
+            <div class="shop-magazine">
+              <a href="">
+                <img src="./static/800px-EBay_logo.svg.png" alt="">
+              </a>
+            </div>
+            <div class="shop-prod">
+              <button onclick="openMap()">Shop</button>
+            </div>
+          </div>
+          <div class="related-products-inner-prodItem">
+            <div class="prod-name">
+              <img src="./static/prod/ip.png" alt="">
+              <a href="./product.html">Smeg KSED65XE 60cm Chimney Cooker Hood</a>
+            </div>
+            <div class="prod-price">
+              <span>£302.00</span>
+            </div>
+            <div class="delivery-info">
+              <a href="">Check re­tail­er for de­liv­ery time</a>
+              <a href="">private countrie</a>
+            </div>
+            <div class="shop-magazine">
+              <a href="">
+                <img src="./static/800px-EBay_logo.svg.png" alt="">
+              </a>
+            </div>
+            <div class="shop-prod">
+              <button onclick="openMap()">Shop</button>
+            </div>
+          </div>
+          <div class="related-products-inner-prodItem">
+            <div class="prod-name">
+              <img src="./static/prod/ip.png" alt="">
+              <a href="./product.html">Smeg KSED65XE 60cm Chimney Cooker Hood</a>
+            </div>
+            <div class="prod-price">
+              <span>£302.00</span>
+            </div>
+            <div class="delivery-info">
+              <a href="">Check re­tail­er for de­liv­ery time</a>
+              <a href="">private countrie</a>
+            </div>
+            <div class="shop-magazine">
+              <a href="">
+                <img src="./static/800px-EBay_logo.svg.png" alt="">
+              </a>
+            </div>
+            <div class="shop-prod">
+              <button>Shop</button>
+            </div>
+          </div>
+          <div class="related-products-inner-prodItem">
+            <div class="prod-name">
+              <img src="./static/prod/ip.png" alt="">
+              <a href="./product.html">Smeg KSED65XE 60cm Chimney Cooker Hood</a>
+            </div>
+            <div class="prod-price">
+              <span>£302.00</span>
+            </div>
+            <div class="delivery-info">
+              <a href="">Check re­tail­er for de­liv­ery time</a>
+              <a href="">private countrie</a>
+            </div>
+            <div class="shop-magazine">
+              <a href="">
+                <img src="./static/800px-EBay_logo.svg.png" alt="">
+              </a>
+            </div>
+            <div class="shop-prod">
+              <button>Shop</button>
+            </div>
+          </div>
+          <div class="related-products-inner-prodItem">
+            <div class="prod-name">
+              <img src="./static/prod/ip.png" alt="">
+              <a href="./product.html">Smeg KSED65XE 60cm Chimney Cooker Hood</a>
+            </div>
+            <div class="prod-price">
+              <span>£302.00</span>
+            </div>
+            <div class="delivery-info">
+              <a href="">Check re­tail­er for de­liv­ery time</a>
+              <a href="">private countrie</a>
+            </div>
+            <div class="shop-magazine">
+              <a href="">
+                <img src="./static/800px-EBay_logo.svg.png" alt="">
+              </a>
+            </div>
+            <div class="shop-prod">
+              <button>Shop</button>
+            </div>
+          </div>
+          <div class="related-products-inner-prodItem">
+            <div class="prod-name">
+              <img src="./static/prod/ip.png" alt="">
+              <a href="./product.html">Smeg KSED65XE 60cm Chimney Cooker Hood</a>
+            </div>
+            <div class="prod-price">
+              <span>£302.00</span>
+            </div>
+            <div class="delivery-info">
+              <a href="">Check re­tail­er for de­liv­ery time</a>
+              <a href="">private countrie</a>
+            </div>
+            <div class="shop-magazine">
+              <a href="">
+                <img src="./static/800px-EBay_logo.svg.png" alt="">
+              </a>
+            </div>
+            <div class="shop-prod">
+              <button>Shop</button>
+            </div>
+          </div>
+          <div class="related-products-inner-prodItem">
+            <div class="prod-name">
+              <img src="./static/prod/ip.png" alt="">
+              <a href="./product.html">Smeg KSED65XE 60cm Chimney Cooker Hood</a>
+            </div>
+            <div class="prod-price">
+              <span>£302.00</span>
+            </div>
+            <div class="delivery-info">
+              <a href="">Check re­tail­er for de­liv­ery time</a>
+              <a href="">private countrie</a>
+            </div>
+            <div class="shop-magazine">
+              <a href="">
+                <img src="./static/800px-EBay_logo.svg.png" alt="">
+              </a>
+            </div>
+            <div class="shop-prod">
+              <button>Shop</button>
+            </div>
+          </div>
+          <div class="related-products-inner-prodItem">
+            <div class="prod-name">
+              <img src="./static/prod/ip.png" alt="">
+              <a href="./product.html">Smeg KSED65XE 60cm Chimney Cooker Hood</a>
+            </div>
+            <div class="prod-price">
+              <span>£302.00</span>
+            </div>
+            <div class="delivery-info">
+              <a href="">Check re­tail­er for de­liv­ery time</a>
+              <a href="">private countrie</a>
+            </div>
+            <div class="shop-magazine">
+              <a href="">
+                <img src="./static/800px-EBay_logo.svg.png" alt="">
+              </a>
+            </div>
+            <div class="shop-prod">
+              <button>Shop</button>
+            </div>
+          </div>
+          <div class="related-products-inner-prodItem">
+            <div class="prod-name">
+              <img src="./static/prod/ip.png" alt="">
+              <a href="./product.html">Smeg KSED65XE 60cm Chimney Cooker Hood</a>
+            </div>
+            <div class="prod-price">
+              <span>£302.00</span>
+            </div>
+            <div class="delivery-info">
+              <a href="">Check re­tail­er for de­liv­ery time</a>
+              <a href="">private countrie</a>
+            </div>
+            <div class="shop-magazine">
+              <a href="">
+                <img src="./static/800px-EBay_logo.svg.png" alt="">
+              </a>
+            </div>
+            <div class="shop-prod">
+              <button>Shop</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-list">
+          <div id='page_navigation'></div>
+         </div>
+      </section>
+      <div class="top-prods">
+        <section class="products-slider">
+          <h3 class="top-prod-headline">TOP 10 Products</h3>
+          <div class="regular slider">
+            <a href="./product.html">
+              <div class="product-on-slide">
+                <img src="./static/prod/ip.png">
+                <div class="product-on-slide-description">
+                  <p>iPhone 12 Pro Max</p>
+                  <span id="price">100$</span>
+                </div>
+              </div>
+            </a>
+            <a href="./product.html">
+              <div class="product-on-slide">
+                <img src="./static/prod/ip.png">
+                <div class="product-on-slide-description">
+                  <p>iPhone 12 Pro Max</p>
+                  <span id="price">100$</span>
+                </div>
+              </div>
+            </a>
+            <a href="./product.html">
+              <div class="product-on-slide">
+                <img src="./static/prod/ip.png">
+                <div class="product-on-slide-description">
+                  <p>iPhone 12 Pro Max</p>
+                  <span id="price">100$</span>
+                </div>
+              </div>
+            </a>
+            <a href="./product.html">
+              <div class="product-on-slide">
+                <img src="./static/prod/ip.png">
+                <div class="product-on-slide-description">
+                  <p>iPhone 12 Pro Max</p>
+                  <span id="price">100$</span>
+                </div>
+              </div>
+            </a>
+            <a href="./product.html">
+              <div class="product-on-slide">
+                <img src="./static/prod/ip.png">
+                <div class="product-on-slide-description">
+                  <p>iPhone 12 Pro Max</p>
+                  <span id="price">100$</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+        <section class="products-slider" style="margin-top: 100px;">
+          <h3 class="top-prod-headline">Last Viewed</h3>
+          <div class="regular slider">
+            <a href="./product.html">
+              <div class="product-on-slide">
+                <img src="./static/prod/ip.png">
+                <div class="product-on-slide-description">
+                  <p>iPhone 12 Pro Max</p>
+                  <span id="price">100$</span>
+                </div>
+              </div>
+            </a>
+            <a href="./product.html">
+              <div class="product-on-slide">
+                <img src="./static/prod/ip.png">
+                <div class="product-on-slide-description">
+                  <p>iPhone 12 Pro Max</p>
+                  <span id="price">100$</span>
+                </div>
+              </div>
+            </a>
+            <a href="./product.html">
+              <div class="product-on-slide">
+                <img src="./static/prod/ip.png">
+                <div class="product-on-slide-description">
+                  <p>iPhone 12 Pro Max</p>
+                  <span id="price">100$</span>
+                </div>
+              </div>
+            </a>
+            <a href="./product.html">
+              <div class="product-on-slide">
+                <img src="./static/prod/ip.png">
+                <div class="product-on-slide-description">
+                  <p>iPhone 12 Pro Max</p>
+                  <span id="price">100$</span>
+                </div>
+              </div>
+            </a>
+            <a href="./product.html">
+              <div class="product-on-slide">
+                <img src="./static/prod/ip.png">
+                <div class="product-on-slide-description">
+                  <p>iPhone 12 Pro Max</p>
+                  <span id="price">100$</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer></footer>
+  </div>
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/slick.js"></script>
+    <script>
+        $('.regular').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    </script>
+    <!-- <script>$(".regular").slick({dots:!1,infinite:!0,slidesToShow:3,slidesToScroll:3});</script> -->
+    <script>var serv=document.getElementById("services");serv.addEventListener("click",()=>{document.querySelector(".sevices-hidden-field").classList.toggle("sevices-visible-field")});</script>
+    <script>var serv=document.getElementById("alterBurg");serv.addEventListener("click",()=>{document.querySelector(".vertical-header-altern").style.display="none"});</script>
+    <script>window.onscroll=function(){myFunction()};var navbar=document.getElementById("navbar"),sticky=navbar.offsetTop;function myFunction(){window.pageYOffset>=sticky?navbar.classList.add("sticky"):navbar.classList.remove("sticky")}</script>
+    <script>var filter=document.getElementById("filters");filter.addEventListener("click",()=>{document.querySelector(".filter-list").classList.toggle("filter-list-visible")});</script>
+    <script>function openmanuf(){document.getElementById("manuf").classList.toggle("filter-visible")}function opentype(){document.getElementById("type").classList.toggle("filter-visible")}function openColor(){document.getElementById("color").classList.toggle("filter-visible")}function openext(){document.getElementById("ext").classList.toggle("filter-visible")}function openmaxext(){document.getElementById("maxext").classList.toggle("filter-visible")}function opencon(){document.getElementById("contr").classList.toggle("filter-visible")}function openen(){document.getElementById("energy").classList.toggle("filter-visible")}function opengras(){document.getElementById("grass").classList.toggle("filter-visible")}function openW(){document.getElementById("width").classList.toggle("filter-visible")}function openDept(){document.getElementById("dept").classList.toggle("filter-visible")}function openSuit(){document.getElementById("suit").classList.toggle("filter-visible")}function openNoise(){document.getElementById("noise").classList.toggle("filter-visible")}function openImp(){document.getElementById("imp").classList.toggle("filter-visible")}</script>
+    <script>var x,i,j,l,ll,selElmnt,a,b,c;for(l=(x=document.getElementsByClassName("custom-select")).length,i=0;i<l;i++){for(ll=(selElmnt=x[i].getElementsByTagName("select")[0]).length,(a=document.createElement("DIV")).setAttribute("class","select-selected"),a.innerHTML=selElmnt.options[selElmnt.selectedIndex].innerHTML,x[i].appendChild(a),(b=document.createElement("DIV")).setAttribute("class","select-items select-hide"),j=1;j<ll;j++)(c=document.createElement("DIV")).innerHTML=selElmnt.options[j].innerHTML,c.addEventListener("click",function(e){var t,s,l,n,i,c,a;for(c=(n=this.parentNode.parentNode.getElementsByTagName("select")[0]).length,i=this.parentNode.previousSibling,s=0;s<c;s++)if(n.options[s].innerHTML==this.innerHTML){for(n.selectedIndex=s,i.innerHTML=this.innerHTML,a=(t=this.parentNode.getElementsByClassName("same-as-selected")).length,l=0;l<a;l++)t[l].removeAttribute("class");this.setAttribute("class","same-as-selected");break}i.click()}),b.appendChild(c);x[i].appendChild(b),a.addEventListener("click",function(e){e.stopPropagation(),closeAllSelect(this),this.nextSibling.classList.toggle("select-hide"),this.classList.toggle("select-arrow-active")})}function closeAllSelect(e){var t,s,l,n,i,c=[];for(t=document.getElementsByClassName("select-items"),s=document.getElementsByClassName("select-selected"),n=t.length,i=s.length,l=0;l<i;l++)e==s[l]?c.push(l):s[l].classList.remove("select-arrow-active");for(l=0;l<n;l++)c.indexOf(l)&&t[l].classList.add("select-hide")}document.addEventListener("click",closeAllSelect);</script>
+    <script>$(".regular").slick({dots:!1,infinite:!0,slidesToShow:3,slidesToScroll:3});</script>
+    <script>function previous(){new_page=parseInt($("#current_page").val())-1,1==$(".active_page").prev(".page_link").length&&go_to_page(new_page)}function next(){new_page=parseInt($("#current_page").val())+1,1==$(".active_page").next(".page_link").length&&go_to_page(new_page)}function go_to_page(a){var e=parseInt($("#show_per_page").val());start_from=a*e,end_on=start_from+e,$("#pagingBox").children().css("display","none").slice(start_from,end_on).css("display","flex"),$(".page_link[longdesc="+a+"]").addClass("active_page").siblings(".active_page").removeClass("active_page"),$("#current_page").val(a)}jQuery(document).ready(function(){var a=$("#pagingBox").children().size(),e=Math.ceil(a/6);$("#current_page").val(0),$("#show_per_page").val(6);for(var n="",g=0;e>g;)n+='<a class="page_link" href="javascript:go_to_page('+g+')" longdesc="'+g+'">'+(g+1)+"</a>",g++;n+="",$("#page_navigation").html(n),$("#page_navigation .page_link:first").addClass("active_page"),$("#pagingBox").children().css("display","none"),$("#pagingBox").children().slice(0,6).css("display","flex")});</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.0/morris.min.js"></script>
+    <script>var data=[{y:"2014",a:50,b:90},{y:"2015",a:65,b:75},{y:"2016",a:50,b:50},{y:"2017",a:75,b:60},{y:"2018",a:80,b:65},{y:"2019",a:90,b:70},{y:"2020",a:100,b:75},{y:"2021",a:115,b:75},{y:"2022",a:120,b:85},{y:"2023",a:145,b:85},{y:"2024",a:160,b:95}],config={data:data,xkey:"y",ykeys:["a"],labels:["Price $"],fillOpacity:.6,hideHover:"auto",behaveLikeLine:!0,resize:!0,pointFillColors:["#285850"],pointStrokeColors:["black"],lineColors:["#6a9a92"],element:"area-chart"};Morris.Area(config),config.element="line-chart",Morris.Line(config),config.element="bar-chart",Morris.Bar(config),config.element="stacked",config.stacked=!0,Morris.Bar(config);</script>
+    <script>var prPop=document.getElementById("prod-popup");prPop.addEventListener("click",()=>{document.querySelector(".product-sp-popup").classList.toggle("product-sp-popup-visible")});</script>
+    <script>var closePop=document.getElementById("close-sp");closePop.addEventListener("click",()=>{document.querySelector(".product-sp-popup").classList.toggle("product-sp-popup-visible")});</script>
+    <script>let hide=document.querySelector(".hidenav");hide.addEventListener("click",()=>{document.querySelector(".vertical-header-altern").style.display="flex"});</script>
+    <script>function openMap(){document.querySelector(".mag-map-popup").classList.add("vs"),console.log("Wd")}function clM(){document.querySelector(".mag-map-popup").classList.remove("vs")}</script>
+    <script>
+      function sidenavVis(){
+        document.querySelector(".header-vertical").classList.add("header-vertical-vis")
+      }
+      function hideSidenav(){
+        document.querySelector(".header-vertical").classList.remove("header-vertical-vis")
+      }
+      function showTopnav(){
+        document.querySelector(".horizonSidenav").classList.add("horizonSidenav-vis")
+      }
+      function hideTopnav(){
+        document.querySelector(".horizonSidenav").classList.remove("horizonSidenav-vis")
+      }
+      function closecats(){
+        document.querySelector(".nav-content-hidden").classList.remove("nav-content-visible")
+      }
+    </script>
+      <script>var serv=document.getElementById("services");serv.addEventListener("click",()=>{document.querySelector(".sevices-hidden-field").classList.toggle("sevices-visible-field")});</script>
+      <script>
+        var cat=document.getElementById("categories"); 
+        cat.addEventListener("click",()=>{
+          document.querySelector(".nav-content-hidden").classList.toggle("nav-content-visible"),
+          document.getElementById("trend").classList.remove("nav-content-visible")
+        }); 
+          
+          var tr=document.getElementById("trends"); 
+          tr.addEventListener("click",()=>{
+            document.getElementById("trend").classList.toggle("nav-content-visible")
+            document.querySelector(".nav-content-hidden").classList.remove("nav-content-visible")
+          })
+          function closeTrend(){
+            document.getElementById("trend").classList.remove("nav-content-visible")
+          }
+    </script>
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+    </body>
+</html>
